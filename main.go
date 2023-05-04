@@ -7,7 +7,7 @@ type predicate func(int) bool
 func main() {
 	is := []int{1, 1, 2, 3, 5, 8, 13}
 	large := filter(is, largerThan5)
-	fmt.Printf("%v", large)
+	fmt.Printf("%v\n", large)
 }
 
 func filter(is []int, condition predicate) []int {
